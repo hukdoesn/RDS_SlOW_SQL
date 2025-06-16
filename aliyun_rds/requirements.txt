@@ -1,0 +1,4 @@
+alibabacloud_rds20140815==9.1.0
+alibabacloud_tea_openapi>=0.3.3
+requests>=2.28.0
+tzdata>=2023.3
