@@ -190,26 +190,6 @@ class RDSSlowSQLMonitor:
             logger.error(f"获取慢SQL记录失败: {str(e)}")
             return None
 
-    def get_access_token(self) -> str:
-        """
-        获取企业微信访问令牌
-        
-        Returns:
-            str: 访问令牌
-        """
-        url = f"https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={self.corp_id}&corpsecret={self.corp_secret}"
-        try:
-            response = requests.get(url)
-            result = response.json()
-            if result.get('errcode') == 0:
-                return result.get('access_token')
-            else:
-                logger.error(f"获取访问令牌失败: {result}")
-                return None
-        except Exception as e:
-            logger.error(f"获取访问令牌异常: {str(e)}")
-            return None
-
     def upload_file(self, file_path: str) -> str:
         """
         上传文件到企业微信临时素材

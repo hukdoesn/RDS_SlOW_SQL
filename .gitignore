@@ -1,1 +1,39 @@
-/.DS_Store
+# 系统文件
+.DS_Store
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+.env
+.venv/
+venv/
+
+# config.ini
+
+# 日志文件
+*.log
+logs/
+log/
+
+# 临时文件
+temp_files/
+alerts/
+*.tmp
+*.temp
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 缓存文件
+.cache/
+.pytest_cache/
+
+# 构建文件
+build/
+dist/
+*.egg-info/
